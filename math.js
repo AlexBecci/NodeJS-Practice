@@ -9,8 +9,14 @@ function multiply(x1, x2) {
 }
 function divide(x1, x2) {
   if (x2 == 0) {
-    return console.log("No se puede dividir ya que el dividendo es ", x2);
+    console.log("No se puede dividir ya que el dividendo es ", x2);
+    return null;
   } else {
     return x1 / x2;
   }
 }
+
+exports.add = add;
+exports.substract = substract;
+exports.multiply = multiply;
+exports.divide = divide;
