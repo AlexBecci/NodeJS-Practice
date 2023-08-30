@@ -1,6 +1,14 @@
-const math = require('./math');
+const fs = require("fs");
 
-console.log(math.add(5,10));
-console.log(math.substract(5,10));
-console.log(math.multiply(5,10));
-console.log(math.divide(5,0));
+fs.writeFile('./text.txt', 'linea uno......',function (err) {
+
+    if(err){
+        console.log(err)
+    }
+    console.log('Archivo creado');
+})
+
+
+console.log('ultima linea')
+
+fs.readFile()
