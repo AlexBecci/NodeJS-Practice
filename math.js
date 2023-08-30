@@ -9,7 +9,7 @@ function multiply(x1, x2) {
 }
 function divide(x1, x2) {
   if (x2 == 0) {
-    console.log("No se puede dividir ya que el dividendo es ", x2);
+    console.log(`No se puede dividir ${x1} ya que el dividendo es`, x2);
     return null;
   } else {
     return x1 / x2;
